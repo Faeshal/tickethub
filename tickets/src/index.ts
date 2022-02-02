@@ -14,7 +14,7 @@ const start = async () => {
     await mongoose.connect(process.env.MONGO_URI, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
-      useCreateIndex: true
+      useCreateIndex: true,
     });
     console.log('Connected to MongoDb');
   } catch (err) {
@@ -22,7 +22,7 @@ const start = async () => {
   }
 
   app.listen(3000, () => {
-    console.log('Auth Services UP on port 3000!');
+    console.log('Ticket Services UP on port 3000!')
   });
 };
 
